@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-// import { TextInput } from 'react-native-paper'
 import Axios from 'axios'
 import Cards from './Cards'
 import Form from './Form'
@@ -31,7 +30,6 @@ const App = () => {
     <div className="App">
       <h1 className="Header" style={{fontFamily:'Patrick Hand SC, cursive', fontSize: '2.5rem'}}>Rick & Morty Characters</h1>
       <Form data={data} count={count} setCount={setCount}/>
-      {/* <TextInput label='How many characters would you like to show?' value={this.state.text} onChange={text => this.setCount({text})}/> */}
       <Cards data={data} />
     </div>
   );

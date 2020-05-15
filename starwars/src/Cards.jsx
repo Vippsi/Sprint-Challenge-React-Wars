@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components' 
-import Axios from 'axios'
+
 
 
 
 
 export default  function({data}){
-console.log(data)
+
 const StyledCardContainer = styled.div`
     display:flex;
     justify-content:center;
@@ -17,16 +17,14 @@ const StyledCardContainer = styled.div`
 `
 
 const StyledCard = styled.div`
-font-family: 'Patrick Hand SC', cursive;
-display:flex;
-flex-direction:column;
-flex-wrap:wrap;
-
-background: #2ecc71;
-margin:2%;
-padding: 1%;
-
-border:5px double black;
+    font-family: 'Patrick Hand SC', cursive;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background: #2ecc71;
+    margin:2%;
+    padding: 1%;
+    border:5px double black;
 
 img{
     
@@ -44,21 +42,12 @@ p{
 .location{
     font-size: 1.2rem;
 }
-
 `
-
-
-
-
-
-
 return(
     <StyledCardContainer>
     {
         data.map((item) => {
             return (
-                
-                
                     <StyledCard>
                         <h2>{item.name}</h2>
                         <p>Species: {item.species}</p>
@@ -66,7 +55,6 @@ return(
                         <p className= 'location'>Location: {item.location.name}</p>
                         <img src={item.image}/>
                     </StyledCard>
-                
             )
         })
     }

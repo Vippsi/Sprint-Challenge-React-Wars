@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import Axios from 'axios'
-import Cards from './Cards'
 
 
 
-export default function({data, count, setCount}){
+
+export default function({count, setCount}){
 
     
    const handleChangeIncrease = (event) => {
@@ -19,10 +18,6 @@ export default function({data, count, setCount}){
            
         }
 
-    const handleSubmit = (event) =>{
-        event.preventDefault();
-      }
-     
       
     return(
         <div>
