@@ -7,8 +7,8 @@ export default function({count, setCount}){
 
     
    const handleChangeIncrease = (event) => {
-    event.preventDefault();    
-    setCount(count + 1)
+        event.preventDefault();    
+        setCount(count + 1)
        
     }
 

@@ -12,7 +12,7 @@ const App = () => {
   useEffect(()=> {
     Axios.get(`https://rickandmortyapi.com/api/character/?page=${count}`)
       .then(res => {
-        console.log(res.data.results)
+        console.log(res.data)
         setData(res.data.results)
       })
       .catch(err => {
